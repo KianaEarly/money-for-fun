@@ -1,120 +1,38 @@
 # E-commerce Back End Starter Code# money-for-fun
 
-Getting Started
-You’ll need to use the MySQL2Links to an external site. and SequelizeLinks to an external site. packages to connect your Express.js API to a MySQL database and the dotenv packageLinks to an external site. to use environment variables to store sensitive data, like your MySQL username, password, and database name.
-
-Use the schema.sql file in the db folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name.
-
-Database Models
-Your database should contain the following four models, including the requirements listed for each model:
-
-Category
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-category_name
-
-String
-
-Doesn't allow null values
-
-Product
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-product_name
-
-String
-
-Doesn't allow null values
-
-price
-
-Decimal
-
-Doesn't allow null values
-
-Validates that the value is a decimal
-
-stock
-
-Integer
-
-Doesn't allow null values
-
-Set a default value of 10
-
-Validates that the value is numeric
-
-category_id
-
-Integer
-
-References the category model's id
-
-Tag
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-tag_name
-
-String
-
-ProductTag
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-product_id
-
-Integer
-
-References the product model's id
-
-tag_id
-
-Integer
-
-References the tag model's id
-
-Associations
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
-
-Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
-
-Category has many Product models.
-
-Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
-
-Tag belongs to many Product models.
+## Description 
+This is a video of back-end routes.
+https://drive.google.com/file/d/1gC7DZA-RWzGCS-8n6hHrF9MPUp-87dpJ/view 
+        
+## About the Author
+name: Kiana Early
+gitHubProfile: 
+[gitHub](https://github.com/KianaEarly)
+        
+        
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributin](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+        
+### Installation 
+npm i
+        
+### Usage
+node index
+        
+### License
+![GitHub license](https://img.shields.io/badge/license-undefined-blue.svg) 
+> [For more information about Licenses please see ] (https://choosealicense.com/)
+        
+### Contributing
+Please do not contribute
+        
+### Tests
+npm run test
+        
+### Questions
+kiana.sambursky@gmail.com
